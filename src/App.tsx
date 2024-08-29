@@ -1,9 +1,11 @@
-import { Text, View } from 'react-native';
+import './gesture-handler.native';
+import { NavigationContainer } from '@react-navigation/native';
+import { StackNavigator } from './modules/core/routes/stack-navigator';
 
 export default function App () {
   return (
-    <View>
-      <Text>App.tsx</Text>
-    </View>
+    <NavigationContainer>
+      <StackNavigator />
+    </NavigationContainer>
   );
 }
